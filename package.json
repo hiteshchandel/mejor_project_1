@@ -1,0 +1,15 @@
+{
+  "name": "major_project_1",
+  "version": "1.0.0",
+  "description": "node.js project for leraning perpose",
+  "keywords": [
+    "javascript"
+  ],
+  "license": "ISC",
+  "author": "Hitesh chandel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
