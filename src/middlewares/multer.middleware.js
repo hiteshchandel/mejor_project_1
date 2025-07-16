@@ -6,10 +6,11 @@ const storage = multer.diskStorage({
         cb(null,"./public/temp")
     },
     filename: function (req, file, cb) {
-        cb(null, file.originalname)
+        const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1E9)}-${file.originalname}`;
+        cb(null, uniqueName);
     }
 })
 
 export const upload = multer({
-    storage,
+    storage
 })
